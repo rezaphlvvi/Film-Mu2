@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;700&display=swap');
+
+
+:root {
+  /* ====== Colors =====*/
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #0000004d;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+
+  /* ====== Transition ======*/
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#mainContent {
+  min-height: 100%;
+}
+
+.card-body,
+#movie {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.container a:hover {
+  color: #414141;
+}
+
+.navbar-brand {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.navbar-nav {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.nav-item a {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  transition: var(--tran-04);
+}
+
+.nav-item a:hover {
+  background: var(--primary-color);
+}
+
+.nav-item .dropdown-menu .dropdown-item a:hover {
+  background: var(--text-color);
+}
+
+.form-check-input,
+.dropdown-item {
+  cursor: pointer;
+}
+
+.card-title h5 {
+  text-decoration: none;
+}
+
+.card {
+  width: 100%;
+}
+
+.card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.bookmark {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #1f8bff;
+  color: black;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  flex-shrink: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.footer .text-decoration-none {
+  background-color: rgba(0, 0, 0, 0.548);
+}
+
+.kind{
+  min-height: 84vh;
+}
+
+.img-thumbnail:hover {
+  background-color: rgba(22, 44, 68, 0.197);
+  padding: 6px 6px;
+  transition: var(--tran-03);
+  opacity: 80%;
+  filter: alpha(opacity=80);
+}
+
+.jumbotron {
+  background-image: url("../assets/heros/jumbotron-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 490px;
+  width: 100%;
+}
+
+.text-jumbotron{
+  padding-top: 100px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.bg-cover {
+  background-attachment: static;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
